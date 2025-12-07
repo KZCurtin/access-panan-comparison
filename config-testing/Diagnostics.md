@@ -7,19 +7,20 @@ This file outlines the diagnostics that we need to save in the new experiments.
 | PanAntarctic  | `salt_flux`             |             |
 | PanAntarctic  | `salt_flux_added`       | Note - maybe included in `salt_flux` in the new update, depends on what version of PanAnt we use. |
 | PanAntarctic  | `wfo`                   |             |
-| PanAntarctic  | `lrunoff`               |             |
+| PanAntarctic  | `lrunoff`               | Liquid river runoff            |
 | ACCESS-OM2-01 | `sfc_salt_flux_ice`     |             |
 | ACCESS-OM2-01 | `sfc_salt_flux_restore` |             |
 | ACCESS-OM2-01 | `pme_river`             |             |
 | ACCESS-OM2-01 | `wfiform`               |             |
 | ACCESS-OM2-01 | `wfimelt`               |             |
-| ACCESS-OM2-01 | `runoff`                |             |
+| ACCESS-OM2-01 | `runoff`                | Liquid river runoff            |
 
 ### Heat budget
-| Model         | Variable                | Description |
-| ------------- |------------------------ | ----------- |
-| PanAntarctic  |                         |             |
-| ACCESS-OM2-01 |                         |             |
+| Model         | Variable         |  Frequency    | Description |
+| ------------- | ---------------- |-------------- | ----------- |
+| PanAntarctic  | `thetao`         | Daily         | Potential temperature    |
+| ACCESS-OM2-01 | `temp`           | Daily         | Conservative temperature        |
+|               |                  |               |             |
 
 ### Restoring checks
 
