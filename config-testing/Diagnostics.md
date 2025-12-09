@@ -11,7 +11,7 @@ This file outlines the diagnostics that we need to save in the new experiments.
 | PanAntarctic  | `fprec`                 | Is the snowfall_flux. Can be used to just isolate the mass flux from ice from `net_melt`.     |
 | PanAntarctic  | `lrunoff`               | Liquid river runoff            |
 | PanAntarctic  | `evap`                  | This is a maybe - could infer evap changes from the difference between `wfo` and `net_melt - fprec`.  |
-| PanAntarctic  | `S_advection_xy`        |  The tendency - not quite the same as `salt_xflux_adv`/`salt_yflux_adv` but seems to be used for budget closures here: https://mom6-analysiscookbook.readthedocs.io/en/latest/notebooks/Closing_tracer_budgets.html          | 
+| PanAntarctic  | `S_advection_xy`        |  The tendency - not quite the same as `salt_xflux_adv`/`salt_yflux_adv` but seems to be used for budget closures here: https://mom6-analysiscookbook.readthedocs.io/en/latest/notebooks/Closing_tracer_budgets.html. From what I can tell, the tendency equals (with the model sign convention) the negative divergence of the directional flux components. So maybe we don't need this term at all?   | 
 | PanAntarctic  | `S_adx`,  `S_adx_2d`    | Found here: https://adcroft.github.io/MOM6/APIs/namespacemom.html? |
 | PanAntarctic  | `S_ady`,  `S_ady_2d`    | Found here: https://adcroft.github.io/MOM6/APIs/namespacemom.html? |
 | ACCESS-OM2-01 | `sfc_salt_flux_ice`     |             |
